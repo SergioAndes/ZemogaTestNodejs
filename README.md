@@ -18,7 +18,7 @@ I created an Azure function (Nodejs serverless) with the two enpoints requested.
 ## How to Use
 You need to have installed node version 16 or greater
 
-- Download repo form branch part1, then 
+- Download repo from branch part1, then 
 
 > npm i (to install dependencies)
 > 
