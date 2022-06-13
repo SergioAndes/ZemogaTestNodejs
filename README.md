@@ -33,6 +33,7 @@ You need to have installed node version 16 or greater
 - To see their latest 5 tweets use: http://localhost:4000/user/{uniqueKey}   (the uniqueKey is caseSensitive)
 - To get treir profile informarion use: https://sergiofunction.azurewebsites.net/api/getProfile/{uniqueKey}
 - To update open potman and send a form data to: PATCH https://sergiofunction.azurewebsites.net/api/updateProfile The userId key is mandatory, you can find it in the last request
+
 ![alt text](https://twitterbucketsergio.s3.amazonaws.com/Screenshot+2022-06-12+234953.png)
 
 ## Postman
