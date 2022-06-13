@@ -27,6 +27,18 @@ app.use((req,res,next)=>{
 //routes
 app.use('/user',userRoutes)
 
+//custom error message para toda la app
+
+app.use((error,req,res,next)=>{
+    console.log(error)
+    const status = error.statusCode
+    const message = error.message;
+    const data = error.data
+    res.status(status).json({
+        message:message,
+        data:data
+    })
+})
 
 //Database Connection
 conn();
