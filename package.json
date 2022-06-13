@@ -1,0 +1,21 @@
+{
+  "name": "serverlessapi",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@anzp/azure-function-multipart": "^3.0.0",
+    "aws-sdk": "^2.1152.0",
+    "mongoose": "^6.3.6"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
