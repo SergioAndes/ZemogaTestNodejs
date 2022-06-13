@@ -1,4 +1,4 @@
-import twitterService from '../Services/twitter.js'
+import twitterService from '../services/twitter.js'
 import path from 'path';
 import User from '../model/user.js'
 import {fileURLToPath} from 'url';
