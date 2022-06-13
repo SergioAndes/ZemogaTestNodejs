@@ -12,7 +12,9 @@ const getUser = async (req,res,next)=>{
         const username= req.params.userName
         const foundUser= await User.findOne({ twitterUser: username }).exec();
         if(!foundUser){
-            console.log('se erro pa')
+            const error = new Error("Id no existe");
+            error.statusCode = 404;
+            throw error;
         }   
         const tweetList = await twitterService.getTweets(username);
         const cleanTweetList= await tweetList.map(tweet=>{
@@ -34,6 +36,7 @@ const getUser = async (req,res,next)=>{
     })
     }catch(err){
         console.log(err)
+        next(err)
     }
 }
 
@@ -50,6 +53,7 @@ try{
 
 }catch(err){
     console.log(err)
+    next(err)
 }
 //res.status(201).json({message:"created", idUser:"el mongoso"})
 }
